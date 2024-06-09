@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/bmi logo.png">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="gender">
+            <label>
+                <input type="radio" name="gender" value="male" checked>
+                Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+        </div>       
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+            <span id="weight-val">20 kg</span>
+        </div>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+            <span id="height-val">100 cm</span>
+        </div>
+        <div class="display">
+            <p id="result">20.0</p>
+            <p id="category">Normal Weight 😊</p>
+            <img id="male-bmi-chart" src="./images/male_bmi.png" alt="Male BMI Chart" style="display: none;">
+            <img id="female-bmi-chart" src="./images/female_bmi.jpg" alt="Female BMI Chart">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
