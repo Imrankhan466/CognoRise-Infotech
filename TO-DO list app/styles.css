@@ -28,7 +28,7 @@ body {
   min-height: 500px;
   max-width: 500px;
   min-width: 250px;
-  background: #f1f5f8;
+  background:#f4f1ea;
   background-image: radial-gradient(#98b8d8 7.2%, transparent 0);
   background-size: 25px 25px;
   border-radius: 20px;
@@ -48,7 +48,7 @@ body {
   transform: rotate(2deg);
   padding: 0.2rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  background-color: rgba(0, 255, 196, 0.7);
+  background-color: rgb(246, 183, 99);
   font-size: 1.5rem;
 }
 
